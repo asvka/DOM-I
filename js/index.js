@@ -47,8 +47,12 @@ navLinks[2].textContent = 'Vision';
 navLinks[3].textContent = 'Features';
 navLinks[4].textContent = 'About';
 navLinks[5].textContent = 'Contact';
-
-
+const h1Text = document.getElementsByTagName('h1');
+h1Text[0].textContent = "DOM Is Awesome";
+const btn = document.getElementsByTagName('button');
+btn[0].textContent = 'Get Started';
+const ctaImg = document.querySelector('#cta-img');
+ctaImg.setAttribute('src', 'img/header-img.png');
 
 
 
