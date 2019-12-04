@@ -48,3 +48,7 @@ navLinks[3].textContent = 'Features';
 navLinks[4].textContent = 'About';
 navLinks[5].textContent = 'Contact';
 
+
+
+
+
