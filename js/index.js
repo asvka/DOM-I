@@ -40,23 +40,22 @@ const siteContent = {
 // Example: Update the img src for the logo
 let logo = document.getElementById("logo-img");
 logo.setAttribute('src', siteContent["nav"]["img-src"])
+
 const navLinks = document.querySelectorAll('a');
-navLinks[0].textContent = 'Services';
-navLinks[1].textContent = 'Product';
-navLinks[2].textContent = 'Vision';
-navLinks[3].textContent = 'Features';
-navLinks[4].textContent = 'About';
-navLinks[5].textContent = 'Contact';
-navLinks.forEach((item, index)=>{
-  item.textContent = siteContent["nav"][`nav-item-${index + 1}`];
-  item.style.color = '#00A693';
+navLinks.forEach((nav, index)=>{
+  nav.textContent = siteContent["nav"][`nav-item-${index+1}`];
+  nav.style.color = '#00A693';
 });
+
+
 const h1Text = document.getElementsByTagName('h1');
 h1Text[0].textContent = "DOM \n Is \n Awesome";
 const btn = document.getElementsByTagName('button');
 btn[0].textContent = 'Get Started';
+
 const ctaImg = document.querySelector('#cta-img');
 ctaImg.setAttribute('src', 'img/header-img.png');
+
 const h4Text = document.getElementsByTagName('h4');
 h4Text[0].textContent = 'Features';
 h4Text[1].textContent = 'About';
@@ -76,6 +75,14 @@ pText[5].textContent = '123 Way 456 Street Somewhere, USA';
 pText[6].textContent = '1 (888) 888-8888';
 pText[7].textContent = 'sales@greatidea.io';
 pText[8].textContent = 'Copyright Great Idea! 2018'
-
 const middleImg = document.querySelector('#middle-img');
 middleImg.setAttribute('src', 'img/mid-page-accent.jpg');
+const newNavObj1 = document.createElement('a');
+newNavObj1.textContent = 'Home';
+newNavObj1.style.color = '#00A693';
+const newNavObj2 = document.createElement('a');
+newNavObj2.textContent = 'Sign-In';
+newNavObj2.style.color = '#00A693';
+const navLinks2 = document.querySelector('nav');
+navLinks2.prepend(newNavObj1);
+navLinks2.append(newNavObj2);
