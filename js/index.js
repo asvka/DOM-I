@@ -86,3 +86,6 @@ newNavObj2.style.color = '#00A693';
 const navLinks2 = document.querySelector('nav');
 navLinks2.prepend(newNavObj1);
 navLinks2.append(newNavObj2);
+let ctaTextH1 = document.querySelector('.cta-text h1')
+siteContent.cta.h1 = "DOM <br> Is <br> Awesome"
+ctaTextH1.innerHTML = siteContent['cta']['h1']
